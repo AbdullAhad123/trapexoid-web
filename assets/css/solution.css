@@ -1,0 +1,98 @@
+header {
+    min-height: 550px;
+    width: 100%;
+    /* background: linear-gradient(to top,  #f4eeff8c, white); */
+    background-color: #d5e1e12b;
+    padding-top: 5.5rem;
+    padding-bottom: 3rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.headerBg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    mix-blend-mode: color-burn;
+}
+
+#vision {
+    background: var(--light_gray);
+}
+
+.visionContainer {
+    height: auto;
+    width: auto;
+    background: var(--light_teal);
+    border-radius: 20px;
+    padding: 2rem 2rem;
+}
+
+/* solutions  */
+
+.solutionsCard {
+    height: 100%;
+    background-color: #fff;
+    box-shadow: 0px 5px 9px 0 #00000024;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.solutionsIcon {
+    height: 50px;
+    width: 50px;
+    background: var(--light_teal);
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    fill: var(--teal);
+}
+
+
+/* start today  */
+#start_today {
+    background: linear-gradient(0, var(--light_gray), transparent);
+}
+
+.startBanner {
+    height: auto;
+    width: 100%;
+    background: var(--teal);
+    border-radius: 20px;
+    padding: 2.5rem 2rem;
+}
+
+/* about  */
+.aboutCard {
+    height: 250px;
+    width: auto;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card1 {
+    background: #F3F8FF;
+}
+
+.card2 {
+    background: #F7F9F2;
+}
+
+.card3 {
+    background: #E9FFC2;
+}
+
+.card4 {
+    background: #F8E8EE;
+}
