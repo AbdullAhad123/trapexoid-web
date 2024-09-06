@@ -169,3 +169,29 @@ header {
     position: relative;
     z-index: 3;
 }
+
+/* about  */
+.aboutCard {
+    height: 250px;
+    width: auto;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card1 {
+    background: #F3F8FF;
+}
+
+.card2 {
+    background: #F7F9F2;
+}
+
+.card3 {
+    background: #E9FFC2;
+}
+
+.card4 {
+    background: #F8E8EE;
+}

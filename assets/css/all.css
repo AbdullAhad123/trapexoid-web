@@ -23,7 +23,7 @@
     --black: #000;
     --footer_black: #192020;
     --facebook: #1877f2;
-    --instagram: linear-gradient(30deg,#f38334,#da2e7d 50%,#6b54c6);
+    --instagram: linear-gradient(30deg, #f38334, #da2e7d 50%, #6b54c6);
     --linkedin: #0a66c2;
     --dribbble: #ffabe7;
     --dribbble_fill: #bc569f;
@@ -89,8 +89,6 @@
     transform: rotate(0);
 }
 
-
-
 /* navbar  */
 #navbar {
     position: fixed;
@@ -115,4 +113,58 @@
         border-radius: 0;
         margin: 0;
     }
+}
+
+/* footer  */
+/* footer  */
+footer {
+    background: var(--footer_black);
+}
+
+.footer_white {
+    color: #f8f9fc;
+}
+
+.socialLinkItem {
+    height: 38px;
+    width: 38px;
+    border-radius: 3px;
+    background: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: #fff;
+}
+
+.fb_icon {
+    background: var(--facebook);
+}
+
+.ig_icon {
+    background: var(--instagram);
+}
+
+.ln_icon {
+    background: var(--linkedin);
+}
+
+.skype_icon {
+    background: var(--skype);
+}
+
+.dribble_icon {
+    background: var(--dribbble);
+    fill: var(--dribbble_fill);
+}
+
+.footer_links {
+    font-size: 0.95rem;
+    color: #ffffff67;
+    font-weight: light;
+    transition: var(--ease_transition);
+    text-decoration: none;
+}
+
+.footer_links:hover {
+    color: #f8f9fc;
 }
