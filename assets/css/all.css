@@ -1,0 +1,118 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* :root {
+    --purple: #424874;
+    --light_purple: #A6B1E1;
+    --lighter_purple: #DCD6F7;
+    --light_gray: #F4EEFF;
+    --white: #fff;
+    --black: #000;
+    --btn_padding: 0.6rem 1.4rem;
+    --ease_transition: 0.3s ease
+} */
+:root {
+    --teal: #00353b;
+    --tealblue: #4498a2;
+    --light_teal: #b0dadf;
+    --lighter_teal: #d5e8eb;
+    --light_gray: #F4EEFF;
+    --white: #fff;
+    --black: #000;
+    --footer_black: #192020;
+    --facebook: #1877f2;
+    --instagram: linear-gradient(30deg,#f38334,#da2e7d 50%,#6b54c6);
+    --linkedin: #0a66c2;
+    --dribbble: #ffabe7;
+    --dribbble_fill: #bc569f;
+    --skype: #0093e0;
+    --btn_padding: 0.6rem 1.4rem;
+    --ease_transition: 0.3s ease;
+}
+
+.wrapper {
+    max-width: 1200px !important;
+    margin: auto;
+}
+
+.fs_6 {
+    font-size: 0.95rem !important;
+}
+
+.fs_5 {
+    font-size: 1.1rem !important;
+}
+
+.heading_line {
+    height: 5px;
+    width: 100px;
+    background: var(--tealblue);
+    border-radius: 10rem;
+}
+
+/* button  */
+
+.btn_teal {
+    background: var(--teal);
+    color: var(--white);
+    fill: var(--white);
+    border: none;
+    outline: none;
+    text-decoration: none;
+    user-select: none;
+    padding: var(--btn_padding);
+    transition: var(--ease_transition);
+}
+
+.btn_gray {
+    background: var(--light_gray);
+    color: var(--black);
+    fill: var(--black);
+    border: none;
+    outline: none;
+    text-decoration: none;
+    user-select: none;
+    padding: var(--btn_padding);
+    transition: var(--ease_transition);
+}
+
+.btn_arrow_icon svg,
+.btn_arrow_icon i {
+    transform: rotate(-45deg);
+    transition: transform var(--ease_transition);
+}
+
+.btn_arrow_icon:hover.btn_arrow_icon svg,
+.btn_arrow_icon:hover.btn_arrow_icon i {
+    transform: rotate(0);
+}
+
+
+
+/* navbar  */
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    transition: var(--ease_transition);
+}
+
+.bg_navbar {
+    background: #fdffff;
+    box-shadow: 0 2px 19px 0 #0000002d;
+}
+
+.navbar_item {
+    margin: 0 0.15rem;
+}
+
+@media (max-width: 991px) {
+    #navbar {
+        border-radius: 0;
+        margin: 0;
+    }
+}

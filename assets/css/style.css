@@ -1,0 +1,171 @@
+header {
+    min-height: 550px;
+    width: 100%;
+    /* background: linear-gradient(to top,  #f4eeff8c, white); */
+    background-color: #d5e1e12b;
+    padding-top: 5.5rem;
+    padding-bottom: 3rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.headerBg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    mix-blend-mode: color-burn;
+}
+
+#vision {
+    background: var(--light_gray);
+}
+
+.visionContainer {
+    height: auto;
+    width: auto;
+    background: var(--light_teal);
+    border-radius: 20px;
+    padding: 2rem 2rem;
+}
+
+/* services  */
+#services {
+    background: #fdffff;
+}
+
+.service_card {
+    min-height: auto;
+    width: auto;
+    /* border: 1px solid var(--light_teal); */
+    box-shadow: 0px 3px 7px 0px #00000029;
+    border-radius: 15px;
+    padding: 1.2rem 1rem;
+    background: #fff;
+}
+
+.stack_pill {
+    padding: 0.4rem 1rem;
+    /* background: var(--lighter_teal); */
+    border: 1px solid var(--light_teal);
+    color: var(--teal);
+    font-size: 13px;
+    border-radius: 100px;
+    margin: 0.1rem 0;
+    user-select: none;
+}
+
+.service_title {
+    font-size: 1.35rem;
+}
+
+/* ongping projects  */
+#ongoing_projects {
+    height: auto;
+    width: auto;
+    background-color: var(--teal);
+}
+
+.ongoing_project_card {
+    min-height: 400px;
+    width: auto;
+    border-radius: 10px;
+    background: #fffbfb;
+    padding: 0.9rem;
+    text-align: start;
+}
+
+.projectTypeIcon {
+    height: 50px;
+    width: 50px;
+    border-radius: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--lighter_teal);
+    fill: var(--teal);
+}
+
+.platformFeatures {
+    font-size: 13px;
+    padding: 0.5rem 1rem;
+    border-radius: 10rem;
+    margin: 0.1rem 0;
+    background: var(--light_gray);
+    color: black;
+}
+
+.solutionsIcon {
+    height: 50px;
+    width: 50px;
+    background: var(--light_teal);
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    fill: var(--teal);
+}
+
+
+/* start today  */
+#start_today {
+    background: linear-gradient(0, var(--light_gray), transparent);
+}
+
+.startBanner {
+    height: auto;
+    width: 100%;
+    background: var(--teal);
+    border-radius: 20px;
+    padding: 2.5rem 2rem;
+}
+
+/* work  */
+
+#work {
+    background: var(--light_gray);
+}
+
+.workCardContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+@media (max-width: 991px) {
+    .workCardContainer {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+    }
+}
+
+@media (max-width: 525px) {
+    .workCardContainer {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 0;
+    }
+}
+
+.workCard {
+    position: relative;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.workCard img {
+    border-radius: 15px;
+    height: auto;
+    width: 100%;
+    position: relative;
+    z-index: 3;
+}
