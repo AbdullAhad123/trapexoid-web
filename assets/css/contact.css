@@ -10,12 +10,38 @@ header {
     align-items: center;
 }
 
-.headerBg {
+#contact {
+    height: auto;
+    position: relative;
+}
+.contactBg {
     position: absolute;
     top: 0;
     left: 0;
-    height: 100%;
+    height: 15%;
     width: 100%;
-    object-fit: cover;
-    mix-blend-mode: color-burn;
+    background: #e7eeee;
+    z-index: -1;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.formContainer {
+    height: auto;
+    max-width: 750px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 7px 10px 0px #0000001a;
+    margin: auto;
+}
+
+.form_input {
+    font-size: 0.9rem !important;
+    padding: 0.8rem !important;
+}
+.form_input:focus {
+    border: 1px solid var(--tealblue) !important;
+}
+.form_input::placeholder {
+    color: #999999 !important; 
 }
