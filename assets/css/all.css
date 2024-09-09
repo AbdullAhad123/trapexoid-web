@@ -168,3 +168,20 @@ footer {
 .footer_links:hover {
     color: #f8f9fc;
 }
+
+/* about   */
+.card1 .aboutCardText {
+    color: #62a1b6;
+}
+
+.card2 .aboutCardText {
+    color: #9da785;
+}
+
+.card3 .aboutCardText {
+    color: #859861;
+}
+
+.card4 .aboutCardText {
+    color: #ab6e85;
+}
