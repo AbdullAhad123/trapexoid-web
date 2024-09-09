@@ -1,0 +1,21 @@
+header {
+    min-height: 450px;
+    width: 100%;
+    /* background: linear-gradient(to top,  #f4eeff8c, white); */
+    background-color: #e7eeee;
+    padding-top: 5.5rem;
+    padding-bottom: 3rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.headerBg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    mix-blend-mode: color-burn;
+}

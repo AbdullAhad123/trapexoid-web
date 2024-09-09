@@ -7,11 +7,47 @@
         <link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="../assets/css/fonts.css">
         <link rel="stylesheet" href="../assets/css/all.css">
-        <link rel="stylesheet" href="../assets/css/style.css">
+        <link rel="stylesheet" href="../assets/css/contact.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css" integrity="sha512-pVCM5+SN2+qwj36KonHToF2p1oIvoU3bsqxphdOIWMYmgr4ZqD3t5DjKvvetKhXGc/ZG5REYTT6ltKfExEei/Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <style>
+            #contact {
+                height: auto;
+                position: relative;
+            }
+            .contactBg {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 15%;
+                width: 100%;
+                background: #e7eeee;
+                z-index: -1;
+                border-bottom-left-radius: 20px;
+                border-bottom-right-radius: 20px;
+            }
 
+            .formContainer {
+                height: auto;
+                max-width: 750px;
+                background-color: white;
+                border-radius: 15px;
+                box-shadow: 0px 7px 10px 0px #0000001a;
+                margin: auto;
+            }
+
+            .form_input {
+                font-size: 0.9rem !important;
+                padding: 0.8rem;
+            }
+            .form_input:focus {
+                border: 1px solid var(--tealblue);
+            }
+            .form_input::placeholder {
+                color: #999999;
+            }
+        </style>
     </head>
     <body>
 
@@ -51,21 +87,55 @@
                 <div class="container-lg wrapper z-1">
                     <div class="row align-items-center">
                         <div class="col-lg-8 col-md-10 col-12 my-2 mx-auto text-center">
-                            <h1 class="display-5 fw-semibold my-1">Working on it</h1>
-                            <!-- <h1 class="display-5 fw-semibold my-1">We transform your business digital future</h1>
-                            <p class="my-2 fs_5">A Mindful team of tech innovators bringing world-class tech ideas to reality. We embrace the power of technology to provide cutting-edge digital solutions that propel our clients toward unprecedented success.</p>
-                            <button class="btn_teal rounded-pill my-1 d-inline-flex align-items-center">
+                            <h1 class="display-5 fw-semibold my-1">Contact Trapexoid</h1>
+                            <p class="my-2 fs_5">Looking for assistance or consultation for your next project? We’re here for you! Reach out to our support team for assistance and guidance.</p>
+                            <a href="#contact" class="btn_teal rounded-pill my-1 d-inline-flex align-items-center">
                                 <span>Get Consultation</span>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"></path></svg>
-                            </button> -->
+                            </a>
                         </div>
-                        <!-- <div class="col-lg-6 col-md-6 col-12 my-2">
-                            <img src="../assets/img/header_image.png" width="100%" height="auto" alt="header development mokckup">
-                        </div> -->
                     </div>
                 </div>
-                <img src="../assets/img/home-hero-bg.jpg" alt="" class="headerBg">
             </header>
+
+            <section id="contact" class="pb-5">
+                <div class="container-lg wrapper">
+                    <div class="formContainer p-md-5 p-3">
+                        <h2 class="my-1 text-center">Get in touch</h2>
+                        <p class="my-1 text-center">Please complete this form to reach our support team, or send us an email at <a href="mailto:support@trapexoid.com." target="_blank">support@trapexoid.com</a></p>
+                        <form action="https://api.web3forms.com/submit" method="POST">
+                            <div>
+                                <div><input type="hidden" name="access_key" value="11bd1a31-2c29-4e1e-8f6c-13a7cd9d7508"></div>
+                            </div>
+                            <div class="my-3">
+                                <label for="name" class="form-label fw-medium text-dark-emphasis my-1">Name</label>
+                                <input type="text" name="name" class="form-control form_input shadow-sm" id="name" placeholder="Tony Stark">
+                            </div>
+                            <div class="my-3">
+                                <label for="email" class="form-label fw-medium text-dark-emphasis my-1">Email Address</label>
+                                <input type="email" name="email" class="form-control form_input shadow-sm" id="email" placeholder="tonystark@xyz.com">
+                            </div>
+                            <div class="my-3">
+                                <label for="company" class="form-label fw-medium text-dark-emphasis my-1">Company</label>
+                                <input type="text" name="company" class="form-control form_input shadow-sm" id="company" placeholder="e.g: Trapexoid">
+                            </div>
+                            <div class="my-3">
+                                <label for="designation" class="form-label fw-medium text-dark-emphasis my-1">Designation</label>
+                                <input type="text" name="designation" class="form-control form_input shadow-sm" id="designation" placeholder="e.g: Sales Manager">
+                            </div>
+                            <div class="my-3">
+                                <label for="message" class="form-label fw-medium text-dark-emphasis my-1">Message</label>
+                                <textarea name="message" class="form-control form_input shadow-sm" id="message" rows="4" placeholder="Drop your message here"></textarea>
+                            </div>
+                            <div class="my-2 text-end">
+                                <button type="submit" class="d-none" id="sendMessage">Submit Form</button>
+                                <button type="button" class="btn_teal rounded-pill fs_6 d-inline-flex gap-1 align-items-center" id="submitMessage">Send Message <i class='bx bxs-paper-plane'></i> </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="contactBg"></div>
+            </section>
             
 
             <footer class="pt-5 pb-2">
@@ -170,6 +240,61 @@
                         spaceBetween: 20,
                     },
                 }
+            });
+        </script>
+        <script>
+            $("#submitMessage").click(function () {
+                const name = $("#name").val();
+                const email = $("#email").val();
+                const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+                const company = $("#company").val();
+                const designation = $("#designation").val();
+                const message = $("#message").val();
+
+                if (name == "") {
+                    $("#name").focus();
+                    $("#name").addClass('is-invalid');
+                } else {
+                    $("#name").removeClass('is-invalid');
+                }
+
+                if (email == "") {
+                    $("#email").focus();
+                    $("#email").addClass('is-invalid');
+                } else if (!emailRegex.test(email)) {
+                    $("#email").focus();
+                    $("#email").addClass('is-invalid');
+                } else {
+                    $("#email").removeClass('is-invalid');
+                }
+
+                if (company == "") {
+                    $("#company").focus();
+                    $("#company").addClass('is-invalid');
+                } else {
+                    $("#company").removeClass('is-invalid');
+                }
+
+                if (designation == "") {
+                    $("#designation").focus();
+                    $("#designation").addClass('is-invalid');
+                } else {
+                    $("#designation").removeClass('is-invalid');
+                }
+
+                if (message == "") {
+                    $("#message").focus();
+                    $("#message").addClass('is-invalid');
+                } else {
+                    $("#message").removeClass('is-invalid');
+                }
+
+                if (name && email && emailRegex.test(email) && company && designation && message) {
+                    $(this).find('i.bx').toggleClass("bxs-paper-plane bx-loader-alt bx-spin")
+                    setTimeout(() => {
+                        $("#sendMessage").click();
+                    }, 3000);
+                } 
             });
         </script>
     </body>
